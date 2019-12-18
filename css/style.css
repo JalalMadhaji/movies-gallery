@@ -6,10 +6,10 @@
 }
 body {
   min-height: 100vh;
-
+  overflow-x: hidden;
   background: #071131;
 }
-.container {
+.containerA {
   width: 80%;
   margin: 20px auto;
   text-align: center;
@@ -19,7 +19,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 10px;
 }
-.card {
+.card,
+.card-item {
   min-height: 350px;
   /* box-shadow: 0 0 5px #0d1a43; */
   background: linear-gradient(0deg, #040a1d, #0d1a43);
