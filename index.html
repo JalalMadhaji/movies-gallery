@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home</title>
+    <link rel="alternate" href="./css/owl.carousel.min.css" >
+    <link rel="stylesheet" href="./css/owl.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div  class="owl-carsouel" id="cards">
+        <div class="card-item">
+
+        </div>
+        <div class="card-item">
+
+        </div>
+        <div class="card-item">
+
+        </div>
+        <div class="card-item">
+
+        </div>
+        <div class="card-item">
+
+        </div>
+        <div class="card-item">
+
+        </div>
+        <div class="card-item">
+
+        </div>
+      </div>
+     </header>
     <main></main>
     <footer></footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#cards").owlCarousel({
+                items:1,
+                responsive:{
+                    480:{items:1},
+                    768:{items:2},
+                    1000:{items:3}
+                },
+                nav:true,
+                navText:['<i class="fa fa-arrow-left" aria-hidden="true"></i>','<i class="fa fa-arrow-right" aria-hidden="true"></i>'],
+                pagination:true,
+                autoPlay:true,
+                loop:true
+            });
+        });
+             </script>
+        
+    <script src="./js/main.js" >
+    
+    </script>
   </body>
 </html>
